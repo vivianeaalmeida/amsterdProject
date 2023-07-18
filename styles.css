@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&family=Cormorant+Garamond:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Work+Sans:wght@100;200;300;400;500&display=swap");
+
+:root {
+  --light-gray: #f2f3f8;
+  --dark-gray: #434446;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+.header {
+  background: url(assets/img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  transition: background-image 1s ease-in-out;
+}
+
+.header .logo-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  padding: 2rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--light-gray);
+  text-transform: uppercase;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 100;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--light-gray);
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  color: var(--dark-gray);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* CONTENT */
+
+.content {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  color: var(--light-gray);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.content-title {
+  font-family: "Cormorant Garamond", serif;
+}
+.content-link {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--light-gray);
+  font-size: 1rem;
+}
+
+/* ABOUT SECTION*/
+
+.about-section {
+  text-align: center;
+  margin: 5rem;
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.portfolio-contain a {
+  color: var(--dark-gray);
+  text-transform: uppercase;
+}
+
+.linha-vertical {
+  color: lightgray;
+  font-size: 2.5rem;
+}
+
+.first-title {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2rem;
+}
+
+.second-title {
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 10rem;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.about-link a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--dark-gray);
+  border-bottom: 2px solid var(--light-gray);
+}
+
+/*SERVICE SECTION*/
+.services {
+  background: var(--light-gray);
+  margin: 0 2rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card-images {
+  margin: 5rem 2rem;
+}
+.card-images img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.card-images a {
+  font-family: "Cormorant Garamond", serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--dark-gray);
+}
+
+/* SECOND GRID IMAGE*/
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards-images {
+  margin: 3rem 2rem;
+  text-align: start;
+}
+
+.cards-images img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.cards-images p {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.cards-images a {
+  font-family: "Cormorant Garamond", serif;
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+/*FOOTER*/
+.footer {
+  background: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+}
+
+.footter-amsterd {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.first-footer p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+}
+
+.info-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+
+.adress h3,
+.contact h3,
+.social-links h3 {
+  font-family: "Bodoni Moda", serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.adress p,
+.contact p,
+.social-links p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+}
+
+.social-links a i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: var(--dark-gray);
+}
+
+/*PORTFOLIO PAGE*/
+
+.logo-links {
+  color: var(--dark-gray) !important;
+}
+
+.portfolio-section {
+  text-align: center;
+  margin: 5rem;
+  line-height: 1.5;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  color: var(--dark-gray);
+}
+
+/* class for scrool function */
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-size: contain;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-navbar {
+    align-items: center;
+  }
+  .navbar ul {
+    justify-content: center;
+  }
+
+  .about-section {
+    display: block;
+    margin: 7rem 2rem;
+    font-size: 14px;
+  }
+
+  .about-content {
+    padding: 0 0;
+  }
+
+  .card {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-content {
+    padding: 0 0;
+  }
+
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 1.5rem;
+  }
+
+  .cards-images {
+    width: 50%;
+    height: 70%;
+    margin: 0 auto;
+  }
+
+  .cards-text {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+}
